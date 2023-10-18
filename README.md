@@ -4,9 +4,7 @@ This code demonstrates how to control the intensity of an LED using Phase-Correc
 ## Table of Contents
 - [Introduction](#introduction)
 - [Components Used](#components-used)
-- [How to Use](#how-to-use)
-- [External Interrupts](#external-interrupts)
-- [ADC Usage](#adc-usage)
+- [Circuit SetUp](#circuit-setup)
 - [Drivers Used](#drivers-used)
 
 ## Introduction
@@ -19,6 +17,10 @@ The code utilizes Timer0 in Phase-Correct PWM mode with OC0 inverted to control 
 - LEDs (1)
 - Resistors
 
+## Circuit SetUp
+- Connect the LED to a PWM-capable pin (e.g., OC0 pin) on the Atmega32.
+- Configure the LED's anode (longer lead) to the PWM pin and the cathode (shorter lead) to ground through a current-limiting resistor.
+- Set up the necessary components based on your circuit design.
 
 ## Drivers Used
 
